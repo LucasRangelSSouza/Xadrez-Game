@@ -6,18 +6,9 @@ public class Position {
 	private int column;
 	
 	public Position(int row, int column) throws BoardException {
-		if ((row > 8) || (row < 1)) {
-			throw new BoardException("Invalid row");
-		} 
-		if ((column > 8) || (column < 1)) {
-			throw new BoardException("Invalid column");
-		}
-		else {
-		
+			
 		this.column = column;
 		this.row = row;
-	
-		}
 	}
 	
 	public Position() {
@@ -38,19 +29,9 @@ public class Position {
 		
 	}
 	
-	public void position(int row,int column) throws BoardException {
-		
-		if ((row > 8) || (row < 1)) {
-			throw new BoardException("Invalid row");
-		} 
-		if ((column > 8) || (column < 1)) {
-			throw new BoardException("Invalid column");
-		}
-		else {
-		
+	public void position(int row,int column) {
 		this.column = column;
 		this.row = row;
 	
-		}
 	}
 }
